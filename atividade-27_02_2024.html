@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Números</title>
+</head>
+
+<body>
+
+    <h1>Soma de Números!!!</h1>
+
+    Insira o 1º número: <input id="input_n1" type="text">
+    <br>
+    Insira o 2º número: <input id="input_n2" type="text">
+
+    <br><br>
+
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
+
+</body>
+
+</html>
+
+<script>
+    var n1 = 0
+    var n2 = 0
+
+    function somar() {
+        n1 = Number(input_n1.value)
+        n2 = Number(input_n2.value)
+        var soma = n1 + n2
+
+        alert('O resultado da soma é: ' + soma);
+    }
+
+    function subtrair() {
+        n1 = Number(input_n1.value)
+        n2 = Number(input_n2.value)
+        var subtracao = n1 - n2
+
+        alert('O resultado da subtração é: ' + subtracao)
+    }
+</script>
